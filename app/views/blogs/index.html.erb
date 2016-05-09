@@ -1,0 +1,9 @@
+
+
+<h1>Sub domains on Cingo.co domain</h1>
+
+<ul>
+	<% @blogs.each do |blog| %>
+		<li><%= link_to blog.name, root_url(subdomain: blog.subdomain) %></li>
+	<% end %>
+</ul>
